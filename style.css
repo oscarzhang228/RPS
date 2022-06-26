@@ -1,0 +1,63 @@
+/* game font */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+body {
+  font-family: "Press Start 2P", cursive;
+  margin: 0;
+  box-sizing: border-box;
+  /* background-image: url(./images/background.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100vh; */
+  color: white;
+}
+
+.welcome {
+  background-color: black;
+}
+
+.welcomeText {
+  text-align: center;
+}
+
+span {
+  opacity: 0;
+  transition: all 1s ease-in;
+}
+
+span.fade {
+  opacity: 1;
+}
+
+span.current::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: white;
+  display: inline-block;
+}
+
+span.blink::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: white;
+  display: inline-block;
+  animation: blink 1s steps(2) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+}
+
+/* to-do list
+welcome screen 
+explain the rules
+put the goblin on screen with hp
+rock paper scissors on bottom with pictures and level
+button to upgrade them and increase damage with coins
+your hp bar
+make it work for mobile screens
+*/
