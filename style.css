@@ -37,21 +37,6 @@ span.current::after {
   display: inline-block;
 }
 
-span.blink::after {
-  content: "";
-  width: 30px;
-  height: 2px;
-  background: white;
-  display: inline-block;
-  animation: blink 1s steps(2) infinite;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-}
-
 /* to-do list
 welcome screen 
 explain the rules

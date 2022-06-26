@@ -24,7 +24,6 @@ function onTick() {
   let remove = setInterval(() => span.classList.remove("current"), 545);
   if (char === welcomeTextArr.length) {
     finish();
-    span.classList.add("blink");
     return;
   }
 }
