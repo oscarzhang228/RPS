@@ -37,6 +37,11 @@ span.current::after {
   display: inline-block;
 }
 
+.rules {
+  text-align: center;
+  margin-top: 30px;
+  line-height: 40px;
+}
 /* to-do list
 welcome screen 
 explain the rules
@@ -44,5 +49,6 @@ put the goblin on screen with hp
 rock paper scissors on bottom with pictures and level
 button to upgrade them and increase damage with coins
 your hp bar
+money bar
 make it work for mobile screens
 */
