@@ -45,7 +45,6 @@ for (let i = 0; i < rulesArr.length; i++) {
 setTimeout(() => {
   let index = 0;
   let timer2 = setInterval(transition, 100);
-
   function transition() {
     const theSpan = rules.querySelectorAll("span")[index];
     theSpan.classList.add("fade");
@@ -59,10 +58,29 @@ setTimeout(() => {
     clearInterval(timer2);
     timer2 = null;
   }
+
+  //click to speed up text appearing
   window.addEventListener("click", () => {
     const allSpan = document.querySelectorAll("span");
+    const allButton = document.querySelectorAll(".name");
     allSpan.forEach((text) => {
       text.style.cssText = "opacity:1;";
     });
+
+    allButton.forEach((button) => {
+      button.style.opacity = "1";
+      button.style.transition = "all 2s";
+    });
+  });
+  //get to the actual game
+  const nameSubmit = document.querySelector(".loginButtons");
+  nameSubmit.addEventListener("submit", function goToSecondPage(e) {
+    e.preventDefault();
+
+    //still need to figure out how to get this to work
+    const submitName = document.getElementById("nameField");
+    globalVars.username = nameField.value;
+    console.log(globalVars.username);
+    location.href = "./html/main.html";
   });
 }, 10500);

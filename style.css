@@ -12,6 +12,7 @@ body {
   color: white;
 }
 
+/* welcome screen css */
 .welcome {
   background-color: black;
 }
@@ -39,9 +40,42 @@ span.current::after {
 
 .rules {
   text-align: center;
-  margin-top: 30px;
   line-height: 40px;
+  margin-top: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
+
+.welcomes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80vh;
+}
+.name {
+  opacity: 0;
+  border: 2px solid #fff59e;
+  border-radius: 30px;
+}
+
+[type="text"].name {
+  width: 500px;
+  height: 20px;
+}
+
+.name {
+  font-family: "Press Start 2P", cursivee;
+  font-weight: 100;
+  color: #fff59e;
+  background-color: red;
+}
+
+.loginButtons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 /* to-do list
 welcome screen 
 explain the rules
