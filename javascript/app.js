@@ -76,11 +76,8 @@ setTimeout(() => {
   const nameSubmit = document.querySelector(".loginButtons");
   nameSubmit.addEventListener("submit", function goToSecondPage(e) {
     e.preventDefault();
-
-    //still need to figure out how to get this to work
     const submitName = document.getElementById("nameField");
-    globalVars.username = nameField.value;
-    console.log(globalVars.username);
+    sessionStorage.setItem("username", submitName.value);
     location.href = "./html/main.html";
   });
 }, 10500);
