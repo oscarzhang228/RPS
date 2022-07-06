@@ -1,8 +1,43 @@
-/* background-image: url(./images/background.png);
+/* game font */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  background-image: linear-gradient(to bottom right, #1f2937, black);
+  border-bottom: 1px solid white;
+  height: 5vh;
+  font-family: "Press Start 2P", cursive;
+  color: #f9faf8;
+  justify-content: space-evenly;
+}
+
+header h1 {
+  word-spacing: -10px;
+  margin-left: auto;
+  align-self: center;
+  font-size: 25px;
+}
+
+header button {
+  margin-left: auto;
+  margin-right: 10px;
+  border: none;
+  background: none;
+  font-family: "Press Start 2P", cursive;
+  color: #f9faf8;
+}
+
+main {
+  background-image: url(../images/background.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  min-height: 100vh; */
+  min-height: 95vh;
+}
 
 /* to-do list
 put the goblin on screen with hp
@@ -11,4 +46,21 @@ button to upgrade them and increase damage with coins
 your hp bar
 money bar
 make it work for mobile screens
+*/
+
+/* 
+Top
+RPS RPG Banner / Restart Button
+Monster Name
+
+Middle 
+Monster Portrait inside a div
+
+
+Rock Paper Scissors
+format: icon with words under it 
+
+Bottom
+HP Bar Money Bar                Shop(popup)
+inside shop, have the three icons and bars next to them showing their current level and a level up button under it that deducts from coin total
 */
