@@ -12,12 +12,10 @@ header {
   height: 5vh;
   font-family: "Press Start 2P", cursive;
   color: #f9faf8;
-  justify-content: space-evenly;
 }
 
 header h1 {
   word-spacing: -10px;
-  margin-left: auto;
   align-self: center;
   font-size: 25px;
 }
@@ -37,10 +35,42 @@ main {
   background-position: center center;
   background-repeat: no-repeat;
   min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mob-name {
+  font-family: "Press Start 2P", cursive;
+  color: #f9faf8;
+  font-size: 15px;
+  margin-top: 5rem;
+}
+
+#mob-health {
+  border: 3px solid black;
+  margin-top: 1rem;
+  width: 35vw;
+  height: 3vh;
+  display: flex;
+  gap: 1px;
+}
+
+.health {
+  background-color: #af111c;
+  border: 1px solid black;
+  width: 50%;
+}
+
+#mob-portrait {
+  width: 30vw;
+  height: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 /* to-do list
-put the goblin on screen with hp
 rock paper scissors on bottom with pictures and level
 button to upgrade them and increase damage with coins
 your hp bar
@@ -49,10 +79,6 @@ make it work for mobile screens
 */
 
 /* 
-Top
-RPS RPG Banner / Restart Button
-Monster Name
-
 Middle 
 Monster Portrait inside a div
 
