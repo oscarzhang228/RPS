@@ -58,7 +58,7 @@ main {
 .health {
   background-color: #af111c;
   border: 1px solid black;
-  width: 50%;
+  width: 100%;
 }
 
 #mob-portrait {
@@ -69,11 +69,17 @@ main {
   justify-content: center;
 }
 
+#text {
+  font-family: "Press Start 2P", cursive;
+  color: black;
+  margin-top: 10px;
+  text-align: center;
+}
 #rps-icons {
   display: flex;
   width: 100%;
   justify-content: space-around;
-  margin-top: 10vh;
+  margin-top: 2vh;
 }
 
 footer {
@@ -112,28 +118,3 @@ footer h1 {
   border: 1px solid black;
   width: 20%;
 }
-
-footer h3 {
-}
-/* to-do list
-rock paper scissors on bottom with pictures and level
-button to upgrade them and increase damage with coins
-make it work for mobile screens
-*/
-
-/* 
-
-Bottom
-HP Bar Money Bar Progression bar  Shop(popup)
-inside shop, have health potion (full hp recovery) damage potion (everything does one extra damge) luck potion (chance to do double damage)
-
-
-for the actual gameplay,
-goblin scouts with 5 hp 1 gold each then
-goblin commander 10 hp 5 gold
-then goblin royal guard 20 hp 10 gold
-then goblin lord 40hp (ends game)
-
-when you lose you demote back to the previous tier and if you lose to the scouts just revert back to the first scout 
-kill 5 of each to progress until the goblin lord 
-*/
