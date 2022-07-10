@@ -93,7 +93,7 @@ function playerWin() {
     document.getElementById("gold").innerText = coins;
     progress++;
     if(currentStage === 4) {
-      text.innerText = "You have saved the world... for now. The Goblin Lord vows to return again, next time with a different game. Press Restart to play again."
+      text.innerText = `You have saved the world... for now. The world still needs you ${username} The Goblin Lord vows to return again, next time with a different game. Press Restart to play again.`
       return;
     }
     if(progress > 4) {
@@ -215,14 +215,7 @@ document.getElementById("luck").addEventListener("click", () => {
       text.innerText = "You do not have enough coins.";
     }
 });
-/* 
-to-do list
 
-
-
-restart button
-
-shop buttons
-
-
-*/
+document.getElementById("restart").addEventListener("click", () => {
+  location.href = "../index.html";
+})
